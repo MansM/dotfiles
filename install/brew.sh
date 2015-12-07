@@ -15,6 +15,7 @@ apps=(
   git
   golang
   jq
+  openconnect
   packer
   tree
 )
