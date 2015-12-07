@@ -7,8 +7,9 @@ dotfiles:
 	ln -sfv "dotfiles/git/gitconfig" ~/.gitconfig
 	ln -sfv "dotfiles/git/gitignore_global" ~/.gitignore_global
 
-# osx:
-# 	./osx/defaults.sh
+osx:
+	./osx/defaults.sh
+	./osx/timemachine.sh
 
 install:
 	./install/brew.sh
