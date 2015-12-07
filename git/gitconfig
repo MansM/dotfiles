@@ -1,0 +1,5 @@
+[user]
+    name = Mans Matulewicz
+    email = cybermans@gmail.com
+[core]
+    excludesfile = ~/.gitignore_global

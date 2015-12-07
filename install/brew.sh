@@ -13,6 +13,7 @@ apps=(
   docker-compose
   docker-machine
   git
+  golang
   jq
   packer
   tree

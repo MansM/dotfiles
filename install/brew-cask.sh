@@ -7,6 +7,7 @@ fi
 apps=(
   caffeine
   calibre
+  dropbox
   istat-menus
   iterm2
   mplayer-osx-extended
@@ -16,6 +17,8 @@ apps=(
   virtualbox
   visual-studio-code
   vlc
+  whatpulse
+  wireshark
   yed
 )
 brew cask install "${apps[@]}"

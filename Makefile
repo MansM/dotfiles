@@ -4,8 +4,8 @@ default: dotfiles osx install
 
 dotfiles:
 	ln -sfv "dotfiles/run/profile" ~/.profile
-# 	ln -sfv ".dotfiles/git/gitconfig" ~/.gitconfig
-# 	ln -sfv ".dotfiles/git/gitignore_global" ~/.gitignore_global
+	ln -sfv ".dotfiles/git/gitconfig" ~/.gitconfig
+	ln -sfv ".dotfiles/git/gitignore_global" ~/.gitignore_global
 
 # osx:
 # 	./osx/defaults.sh
