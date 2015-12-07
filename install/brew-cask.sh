@@ -7,6 +7,7 @@ fi
 apps=(
   caffeine
   calibre
+  istat-menus
   iterm2
   mplayer-osx-extended
   sourcetree
