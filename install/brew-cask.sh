@@ -11,6 +11,7 @@ apps=(
   istat-menus
   iterm2
   mplayer-osx-extended
+  nomad
   sourcetree
   tunnelblick
   vagrant

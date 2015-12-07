@@ -1,13 +1,5 @@
-
-# MacPorts Installer addition on 2014-04-29_at_10:42:52: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-
-spl () { docker run --rm -v `printf "%q" "$1"`:/root albumsplitter; }
-c () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-dcli () { docker images |grep none|awk {'print $3 '} |xargs docker rmi ;}
-dcl () { docker ps -a |grep -v CONTAINER|awk {' print $1 '} |xargs docker rm;}
-
-eval "$(docker-machine env default)"
-export HOMEBREW_GITHUB_API_TOKEN=2ec914e220d6ce3d163980581bac70ae997b03e9
+# Read the modules.
+for DOTFILE in `find ~/dotfiles/resources -type f`
+do
+  [ -f "${DOTFILE}" ] && source "${DOTFILE}"
+done

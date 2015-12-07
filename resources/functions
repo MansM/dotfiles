@@ -1,0 +1,2 @@
+spl () { docker run --rm -v `printf "%q" "$1"`:/root albumsplitter; }
+c () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}

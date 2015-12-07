@@ -12,6 +12,7 @@ apps=(
   docker
   docker-compose
   docker-machine
+  docker-swarm
   git
   golang
   jq
