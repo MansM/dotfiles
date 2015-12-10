@@ -1,5 +1,5 @@
 #brew
-alias bubu='brew update && brew upagrade'
+alias bubu='brew update && brew upgrade'
 
 #docker
 alias dcl='docker ps -aq|xargs docker rm'
@@ -10,5 +10,8 @@ alias dstop='docker ps -q|xargs docker stop'
 #sublime
 alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+#ansible
+alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
+alias vanp='ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
 
 

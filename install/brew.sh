@@ -9,6 +9,7 @@ brew upgrade
 
 # Apps to be installed by homebrew.
 apps=(
+  ansible
   docker
   docker-compose
   docker-machine
