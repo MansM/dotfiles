@@ -12,6 +12,7 @@ apps=(
   iterm2
   mplayer-osx-extended
   nomad
+  slack
   sourcetree
   tunnelblick
   vagrant

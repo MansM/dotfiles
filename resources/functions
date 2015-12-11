@@ -1,2 +1,9 @@
 spl () { docker run --rm -v `printf "%q" "$1"`:/root albumsplitter; }
 c () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+csshv () {
+  for p in 2222 2200 2201 2202; do
+    ssh-keygen -R [127.0.0.1]:$p
+    ssh-keyscan -p $p 127.0.0.1 >> ~/.ssh/known_hosts
+  done
+}
