@@ -14,3 +14,5 @@ alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
 alias vanp='ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
 
+#cd into projecten
+alias cdp='cd ~/Documents/projecten'
