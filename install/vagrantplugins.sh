@@ -5,6 +5,7 @@ if [ ! -x "$(which vagrant)" ]; then
 fi
 
 plugins=(
+  vagrant-cachier
 	vagrant-hostmanager
 	vagrant-managed-servers
 	vagrant-triggers
