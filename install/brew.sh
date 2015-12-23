@@ -9,7 +9,6 @@ brew upgrade
 
 # Apps to be installed by homebrew.
 apps=(
-  ansible
   docker
   docker-compose
   docker-machine
@@ -22,6 +21,12 @@ apps=(
   tree
 )
 brew install "${apps[@]}"
+
+develapps=(
+  ansible
+)
+
+brew install --devel "${develapps[@]}"
 
 # Git comes with diff-highlight, but isn't in the PATH
 ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight
