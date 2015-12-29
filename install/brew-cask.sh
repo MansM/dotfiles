@@ -10,6 +10,7 @@ apps=(
   caffeine
   calibre
   dropbox
+  evernote
   istat-menus
   iterm2
   mplayer-osx-extended
