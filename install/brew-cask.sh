@@ -14,6 +14,7 @@ apps=(
   istat-menus
   iterm2
   mplayer-osx-extended
+  multibit
   nomad
   slack
   sourcetree
