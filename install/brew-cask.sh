@@ -7,6 +7,7 @@ fi
 
 # Apps to be installed by homebrew cask.
 apps=(
+  1password
   caffeine
   calibre
   dropbox
@@ -14,7 +15,7 @@ apps=(
   istat-menus
   iterm2
   mplayer-osx-extended
-  multibit
+  #multibit
   nomad
   slack
   sourcetree
