@@ -7,3 +7,6 @@ csshv () {
     ssh-keyscan -p $p 127.0.0.1 >> ~/.ssh/known_hosts
   done
 }
+
+#docker
+function dbash { drun "${@:2}" "$1" /bin/bash; }
