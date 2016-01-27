@@ -20,6 +20,7 @@ apps=(
   slack
   sourcetree
   caskroom/versions/sublime-text3
+  tomahawk
   tunnelblick
   vagrant
   virtualbox
