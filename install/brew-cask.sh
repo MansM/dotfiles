@@ -11,6 +11,7 @@ apps=(
   caffeine
   calibre
   dropbox
+  duet
   evernote
   istat-menus
   iterm2

@@ -1,13 +1,6 @@
 #brew
 alias bubu='brew update && brew upgrade'
 
-#docker
-alias dcl='docker ps -aq|xargs docker rm'
-alias dcli='docker images -q|xargs docker rmi'
-alias denv='eval "$(docker-machine env docker)"'
-alias dstop='docker ps -q|xargs docker stop' 
-alias drun="docker run -it --rm"
-
 #sublime
 alias s='/opt/homebrew-cask/Caskroom/sublime-text3/3083/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 

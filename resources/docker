@@ -1,0 +1,68 @@
+#docker
+alias d='docker'
+alias dcl='docker ps -aq|xargs docker rm'
+alias dcli='docker images -q|xargs docker rmi'
+alias dcrvm='docker-machine create --driver virtualbox --engine-insecure-registry http://localhost:5000 --engine-registry-mirror http://localhost:5000 --virtualbox-hostonly-cidr 10.0.50.1/24 docker'
+#alias denv='eval "$(docker-machine env docker)"'
+alias dstop='docker ps -q|xargs docker stop' 
+alias drun="docker run -it --rm"
+alias dssh='docker-machine ssh'
+
+function denv {
+  docker-machine status docker
+  rc=$?
+  if [[ $rc != 0 ]]; then return 1; fi
+  eval "$(docker-machine env docker)"
+  docker_ip=$(docker-machine ip docker)
+  if grep -q "docker" /etc/hosts
+  then
+    current_ip=$(grep docker /etc/hosts | awk {'print $1'})
+    if [ ! "${current_ip}" == "${docker_ip}" ]
+    then
+      sudo sed -i '' "s/${current_ip}/${docker_ip}/" /etc/hosts
+    fi
+  else
+    echo "${docker_ip} docker" | sudo tee -a /etc/hosts > /dev/null
+  fi
+}
+
+
+function dbash { drun "${@:2}" "$1" /bin/bash; }
+
+function dcache-create {
+  mkdir -p ${HOME}/.docker/registry/cache
+
+cat << EOF > ${HOME}/.docker/registry/config.yml
+version: 0.1
+log:
+  fields:
+    service: registry
+storage:
+  cache:
+    blobdescriptor: inmemory
+  filesystem:
+    rootdirectory: /var/lib/registry
+http:
+  addr: :5000
+  headers:
+    X-Content-Type-Options: [nosniff]
+proxy:
+  remoteurl: https://registry-1.docker.io
+EOF
+
+  docker run -d --restart always -p 5000:5000 --name registry-mirror -v ${HOME}/.docker/registry/config.yml:/etc/docker/registry/config.yml -v ${HOME}/.docker/registry/cache:/var/lib/registry registry:2
+  }
+
+  function dcache-list {
+  repos=$(curl -s http://docker:5000/v2/_catalog | jq -r ".repositories | .[] | .")
+  for repo in ${repos}
+  do
+    echo
+    echo "${green}${repo}${reset}"
+    tags=$(curl -s http://docker:5000/v2/${repo}/tags/list | jq -r ".tags | .[] | .")
+    for tag in ${tags}
+    do
+      echo "- ${tag}"
+    done
+  done
+}
