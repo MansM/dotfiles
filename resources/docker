@@ -7,6 +7,7 @@ alias dcrvm='docker-machine create --driver virtualbox --engine-insecure-registr
 alias dstop='docker ps -q|xargs docker stop' 
 alias drun="docker run -it --rm"
 alias dssh='docker-machine ssh'
+alias dnomadbuild='docker run --rm -v ${HOME}/Documents/projecten/docker/volumes/nomadout:/out nomadbuild'
 
 function denv {
   docker-machine status docker

@@ -17,8 +17,10 @@ apps=(
   git
   golang
   jq
+  nomad
   openconnect
   packer
+  plantuml
   tree
 )
 # brew install "${apps[@]}"
