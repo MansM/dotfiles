@@ -18,6 +18,7 @@ apps=(
   mplayer-osx-extended
   #multibit
   nomad
+  skype
   slack
   sourcetree
   caskroom/versions/sublime-text3
