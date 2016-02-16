@@ -2,7 +2,7 @@
 alias d='docker'
 alias dcl='docker ps -aq|xargs docker rm'
 alias dcli='docker images -q|xargs docker rmi'
-alias dcrvm='docker-machine create --driver virtualbox --engine-insecure-registry http://localhost:5000 --engine-registry-mirror http://localhost:5000 --virtualbox-hostonly-cidr 10.0.50.1/24 docker'
+alias dcrvm='docker-machine create --driver virtualbox --engine-insecure-registry http://localhost:5000 --engine-registry-mirror http://localhost:5000  --virtualbox-cpu-count "2" --virtualbox-memory "2048" --virtualbox-hostonly-cidr 10.0.50.1/24 docker'
 #alias denv='eval "$(docker-machine env docker)"'
 alias dstop='docker ps -q|xargs docker stop' 
 alias drun="docker run -it --rm"
