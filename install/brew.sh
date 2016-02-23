@@ -23,7 +23,7 @@ apps=(
   plantuml
   tree
 )
-# brew install "${apps[@]}"
+brew install "${apps[@]}"
 
 # develapps=(
 #   ansible
