@@ -22,6 +22,7 @@ apps=(
   packer
   plantuml
   tree
+  watch
 )
 brew install "${apps[@]}"
 
