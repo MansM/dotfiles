@@ -1,5 +1,6 @@
 spl () { docker run --rm -v `printf "%q" "$1"`:/root albumsplitter; }
 c () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+tf () { terraform $* --var-file ~/.terraform.d/terraform.tfvars; }
 
 csshv () {
   for p in 2222 2200 2201 2202 2203; do
