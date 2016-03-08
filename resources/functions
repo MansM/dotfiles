@@ -8,3 +8,4 @@ csshv () {
     ssh-keyscan -p $p 127.0.0.1 >> ~/.ssh/known_hosts
   done
 }
+assh () { ssh -o CheckHostIP=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/mans.pem ubuntu@$* ; }
