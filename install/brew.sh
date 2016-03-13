@@ -23,6 +23,7 @@ apps=(
   plantuml
   tree
   watch
+  https://raw.github.com/adammck/terraform-inventory/master/homebrew/terraform-inventory.rb
 )
 brew install "${apps[@]}"
 

@@ -13,3 +13,6 @@ alias cdp='cd ~/Documents/projecten'
 
 #jekyll
 alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll jekyll s --force_polling --drafts'
+
+#demo
+alias demoloop='while :; do curl --silent http://dockerserver1.mansm.io/; sleep 0.5; done'
