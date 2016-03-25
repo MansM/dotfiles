@@ -22,6 +22,7 @@ apps=(
   slack
   sourcetree
   caskroom/versions/sublime-text3
+  #terraform
   tomahawk
   tunnelblick
   vagrant
