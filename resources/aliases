@@ -1,5 +1,5 @@
 #brew
-alias bubu='brew update && brew upgrade'
+alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
 
 #sublime
 alias s='/opt/homebrew-cask/Caskroom/sublime-text3/3083/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
