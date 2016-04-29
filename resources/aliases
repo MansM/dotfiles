@@ -1,3 +1,6 @@
+#kill ssh sessions because tf destroy doenst kill running ssh sessions
+#alias asshkill='ps -ef|grep "ssh -o C"|grep mansm.io|grep -v grep|awk {" print $2 "}|xargs kill'
+
 #brew
 alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
 

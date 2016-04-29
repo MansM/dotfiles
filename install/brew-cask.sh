@@ -17,11 +17,12 @@ apps=(
   iterm2
   mplayer-osx-extended
   #multibit
-  nomad
+  #nomad
   skype
   slack
   sourcetree
   caskroom/versions/sublime-text3
+  telegram
   #terraform
   tomahawk
   tunnelblick
