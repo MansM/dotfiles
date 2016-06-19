@@ -5,7 +5,7 @@
 alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
 
 #sublime
-alias s='/opt/homebrew-cask/Caskroom/sublime-text3/3083/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias s='/usr/local/Caskroom/sublime-text3/3083/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
 #ansible
 alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
@@ -15,7 +15,7 @@ alias vanp='ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u 
 alias cdp='cd ~/Documents/projecten'
 
 #jekyll
-alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p $(docker-machine ip `docker-machine active`):4000:4000 jekyll/jekyll jekyll s --force_polling --drafts'
+alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 4000:4000 jekyll/jekyll jekyll s --force_polling --drafts'
 
 #demo
 alias demoloop='while :; do curl --silent http://dockerserver1.mansm.io/; sleep 0.5; done'

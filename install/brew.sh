@@ -21,10 +21,10 @@ apps=(
   openconnect
   packer
   plantuml
-  terraform
+  #terraform
   tree
   watch
-  https://raw.github.com/adammck/terraform-inventory/master/homebrew/terraform-inventory.rb
+  https://raw.githubusercontent.com/adammck/terraform-inventory/master/HomebrewFormula/terraform-inventory.rb
 )
 brew install "${apps[@]}"
 
