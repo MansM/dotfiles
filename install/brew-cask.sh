@@ -1,7 +1,7 @@
 # Install cask.
-if [ ! -z "$(brew cask --version)" ]; then
-  brew install caskroom/cask/brew-cask
-fi
+#if [ ! -z "$(brew cask --version)" ]; then
+#  brew install caskroom/cask/brew-cask
+#fi
 
   brew tap caskroom/versions
 
@@ -14,14 +14,14 @@ apps=(
   duet
   evernote
   istat-menus
-  iterm2
+  Caskroom/versions/iterm2-beta
   mplayer-osx-extended
   #multibit
   #nomad
   skype
   slack
   sourcetree
-  caskroom/versions/sublime-text3
+  sublime-text
   telegram
   terraform
   tomahawk

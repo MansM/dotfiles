@@ -9,3 +9,7 @@ csshv () {
   done
 }
 assh () { ssh -o CheckHostIP=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/mans.pem ubuntu@$* ; }
+
+centssh () { 
+  ssh -o CheckHostIP=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/mans.pem centos@$* 
+}

@@ -1,2 +1,4 @@
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export GOPATH=${HOME}/Documents/projecten/go
+export PATH=/opt/local/bin:/opt/local/sbin::${GOPATH}/bin:$PATH
+
 

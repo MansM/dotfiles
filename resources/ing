@@ -1,0 +1,5 @@
+setrouteing () {
+ gateway=`netstat -rn | grep default | awk '{ print $2 }' | grep "^10" | tail -n 1`
+ sudo route delete 10.0.0.0/8 $gateway
+ sudo route add 10.0.0.0/8 $gateway
+}
