@@ -23,7 +23,7 @@ apps=(
   sourcetree
   sublime-text
   telegram
-  terraform
+  #terraform
   tomahawk
   tunnelblick
   vagrant

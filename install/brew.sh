@@ -10,10 +10,10 @@ brew upgrade
 # Apps to be installed by homebrew.
 apps=(
   ansible
-  docker
-  docker-compose
-  docker-machine
-  docker-swarm
+  #docker
+  #docker-compose
+  #docker-machine
+  #docker-swarm
   git
   golang
   jq
@@ -21,8 +21,9 @@ apps=(
   openconnect
   packer
   plantuml
-  #terraform
+  terraform
   tree
+  vault
   watch
   https://raw.githubusercontent.com/adammck/terraform-inventory/master/HomebrewFormula/terraform-inventory.rb
 )
