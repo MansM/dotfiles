@@ -22,10 +22,10 @@ apps=(
   packer
   plantuml
   terraform
+  terraform-inventory
   tree
   vault
-  watch
-  https://raw.githubusercontent.com/adammck/terraform-inventory/master/HomebrewFormula/terraform-inventory.rb
+  watch 
 )
 brew install "${apps[@]}"
 
