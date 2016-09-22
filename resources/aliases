@@ -5,7 +5,7 @@
 alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
 
 #sublime
-alias s='/usr/local/Caskroom/sublime-text/3114/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias s='/usr/local/bin/subl'
 
 #ansible
 alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
