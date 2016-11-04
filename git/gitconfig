@@ -1,8 +1,8 @@
 [user]
-    name = Mans Matulewicz
-    email = cybermans@gmail.com
+	name = Mans Matulewicz
+	email = mans.matulewicz@gmail.com
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/Mans/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -11,3 +11,5 @@
 	trustExitCode = true
 [credential]
 	helper = osxkeychain
+[commit]
+	template = /Users/Mans/.stCommitMsg

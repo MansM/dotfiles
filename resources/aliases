@@ -19,3 +19,6 @@ alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll 
 
 #demo
 alias demoloop='while :; do curl --silent http://dockerserver1.mansm.io/; sleep 0.5; done'
+
+#vagrant ssh
+alias vssh='ssh -i ~/.vagrant.d/insecure_private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l vagrant'
