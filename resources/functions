@@ -13,3 +13,7 @@ assh () { ssh -o CheckHostIP=no -o UserKnownHostsFile=/dev/null -o StrictHostKey
 centssh () { 
   ssh -o CheckHostIP=no -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i ~/.ssh/mans.pem centos@$* 
 }
+
+bcupd () {
+  brew cask uninstall --force $* && brew cask install $*
+}
