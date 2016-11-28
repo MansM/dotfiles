@@ -2,7 +2,7 @@
 	name = Mans Matulewicz
 	email = mans.matulewicz@gmail.com
 [core]
-	excludesfile = /Users/Mans/.gitignore_global
+	excludesfile = ~/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
