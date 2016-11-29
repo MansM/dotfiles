@@ -10,6 +10,7 @@ brew upgrade
 # Apps to be installed by homebrew.
 apps=(
   ansible
+  cntlm
   #docker
   #docker-compose
   #docker-machine
