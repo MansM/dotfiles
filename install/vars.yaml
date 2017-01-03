@@ -1,0 +1,24 @@
+cask_packages:
+  - 1password
+  - caffeine
+  - calibre
+  - dropbox
+  - duet
+  - evernote
+  - istat-menus
+  - iterm2-beta
+  - mplayer-osx-extended
+  - skype
+  - slack
+  - sourcetree
+  - sublime-text
+  - telegram
+  - tomahawk
+  - tunnelblick
+  - vagrant
+  - virtualbox
+  - visual-studio-code
+  - vlc
+  - whatpulse
+  - wireshark
+  - yed

@@ -1,0 +1,45 @@
+- hosts: 127.0.0.1
+  become: False
+  tasks:
+    - name: include vars
+      include_vars: file=vars.yaml
+
+    - name: tap versions
+      homebrew_tap: name=caskroom/versions
+
+    - name: brew cask installs
+      homebrew_cask: name={{ item }} state=present
+      with_items: "{{ cask_packages }}"
+
+    - name: get installed version
+      changed_when: False
+      shell: ls -1 /usr/local/Caskroom/{{ item }}/.metadata
+      register: versions
+      with_items: "{{ cask_packages }}"
+
+    - name: get available versions
+      changed_when: False
+      shell: brew cask info {{ item }} |head -1| awk '{print $NF}'
+      register: inst_versions
+      with_items: "{{ cask_packages }}"
+
+    - debug:
+        msg: "{{ item.0.item }}: {{ item.0.stdout }} and {{ item.1.stdout }}"
+      with_together:
+        - "{{ versions.results }}"
+        - "{{ inst_versions.results }}"
+      when:  item.0.stdout != item.1.stdout 
+
+    - name: uninstall old versions
+      homebrew_cask: name={{ item.0.item }} state=absent
+      with_together:
+        - "{{ versions.results }}"
+        - "{{ inst_versions.results }}"
+      when:  item.0.stdout != item.1.stdout 
+
+    - name: install new versions
+      homebrew_cask: name={{ item.0.item }} state=present
+      with_together:
+        - "{{ versions.results }}"
+        - "{{ inst_versions.results }}"
+      when:  item.0.stdout != item.1.stdout 
