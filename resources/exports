@@ -2,5 +2,3 @@ export GOPATH=${HOME}/Documents/projecten/go
 export PATH=/opt/local/bin:/opt/local/sbin::${GOPATH}/bin:$PATH
 export HOMEBREW_NO_ANALYTICS=1
 export ATLAS_CHANGELOG=$(ls /usr/local/Caskroom/virtualbox/.metadata/|head -1)
-
-

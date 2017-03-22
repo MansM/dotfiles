@@ -8,6 +8,7 @@ alias dstop='docker ps -q|xargs docker stop'
 alias drun="docker run -it --rm"
 alias dssh='docker-machine ssh'
 alias dnomadbuild='docker run --rm -v ${HOME}/Documents/projecten/docker/volumes/nomadout:/out nomadbuild'
+alias dtime='docker run --rm --privileged alpine hwclock -s'
 
 function denv {
   docker-machine status docker
