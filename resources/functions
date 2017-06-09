@@ -15,5 +15,9 @@ centssh () {
 }
 
 bcupd () {
-  brew cask uninstall --force $* && brew cask install $*
+  for i in $(brew cask outdated|awk {' print $1 '})
+  do 
+    brew cask fetch $i
+    brew cask uninstall --force $i && brew cask install $i
+  done
 }

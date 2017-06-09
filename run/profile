@@ -3,6 +3,6 @@ for DOTFILE in `find ~/dotfiles/resources -type f`
 do
   [ -f "${DOTFILE}" ] && source "${DOTFILE}"
 done
-
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 #source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
