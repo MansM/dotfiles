@@ -21,3 +21,7 @@ bcupd () {
     brew cask uninstall --force $i && brew cask install $i
   done
 }
+
+brcupd () {
+  brew cask fetch $1 && brew cask uninstall $1 && brew cask install $1
+}

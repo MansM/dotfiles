@@ -30,16 +30,16 @@
         - "{{ inst_versions.results }}"
       when:  item.0.stdout != item.1.stdout 
 
-    - name: uninstall old versions
-      homebrew_cask: name={{ item.0.item }} state=absent
-      with_together:
-        - "{{ versions.results }}"
-        - "{{ inst_versions.results }}"
-      when:  item.0.stdout != item.1.stdout 
+    # - name: uninstall old versions
+    #   homebrew_cask: name={{ item.0.item }} state=absent
+    #   with_together:
+    #     - "{{ versions.results }}"
+    #     - "{{ inst_versions.results }}"
+    #   when:  item.0.stdout != item.1.stdout 
 
-    - name: install new versions
-      homebrew_cask: name={{ item.0.item }} state=present
-      with_together:
-        - "{{ versions.results }}"
-        - "{{ inst_versions.results }}"
-      when:  item.0.stdout != item.1.stdout 
+    # - name: install new versions
+    #   homebrew_cask: name={{ item.0.item }} state=present
+    #   with_together:
+    #     - "{{ versions.results }}"
+    #     - "{{ inst_versions.results }}"
+    #   when:  item.0.stdout != item.1.stdout 
