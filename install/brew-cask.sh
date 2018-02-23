@@ -24,7 +24,6 @@ apps=(
   sublime-text
   telegram
   #terraform
-  tomahawk
   tunnelblick
   vagrant
   virtualbox

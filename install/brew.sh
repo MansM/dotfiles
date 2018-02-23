@@ -18,8 +18,10 @@ apps=(
   git
   golang
   jq
+  kubernetes-cli
   nomad
   openconnect
+  openshift-cli
   packer
   plantuml
   terraform
