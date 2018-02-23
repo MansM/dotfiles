@@ -8,6 +8,7 @@
 # Apps to be installed by homebrew cask.
 apps=(
   1password
+  battery-guardian
   caffeine
   calibre
   dropbox
