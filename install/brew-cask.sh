@@ -20,7 +20,7 @@ apps=(
   minishift
   mplayer-osx-extended
   #multibit
-  #nomad
+  nomad
   skype
   slack
   sourcetree
