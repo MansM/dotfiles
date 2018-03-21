@@ -16,6 +16,8 @@ apps=(
   evernote
   istat-menus
   Caskroom/versions/iterm2-beta
+  minikube
+  minishift
   mplayer-osx-extended
   #multibit
   #nomad
