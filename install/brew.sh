@@ -14,6 +14,7 @@ apps=(
   #docker
   #docker-compose
   #docker-machine
+  docker-machine-driver-xhyve
   #docker-swarm
   git
   golang
