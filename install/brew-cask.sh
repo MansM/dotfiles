@@ -16,11 +16,13 @@ apps=(
   evernote
   istat-menus
   Caskroom/versions/iterm2-beta
+  libreoffice
   minikube
   minishift
   mplayer-osx-extended
-  #multibit
   nomad
+  postman
+  signal
   skype
   slack
   sourcetree
@@ -33,6 +35,7 @@ apps=(
   visual-studio-code
   vlc
   whatpulse
+  whatsapp
   wireshark
   yed
 )
