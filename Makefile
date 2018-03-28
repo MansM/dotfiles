@@ -1,6 +1,6 @@
-.PHONY: dotfiles osx install
+.PHONY: dotfiles osx install code
 
-default: dotfiles osx install
+default: dotfiles osx install code
 
 dotfiles:
 	ln -sfv "dotfiles/run/profile" ~/.profile
@@ -19,3 +19,7 @@ install:
 
 vagrantplugins:
 	./install/vagrantplugins.sh
+
+code:
+	mkdir -p ${HOME}/Library/Application\ Support/Code/User/
+	ln -sfv ${HOME}/dotfiles/code/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
