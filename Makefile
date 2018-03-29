@@ -23,3 +23,4 @@ vagrantplugins:
 code:
 	mkdir -p ${HOME}/Library/Application\ Support/Code/User/
 	ln -sfv ${HOME}/dotfiles/code/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
+	./code/plugins.sh
