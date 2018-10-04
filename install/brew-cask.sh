@@ -3,7 +3,7 @@
 #  brew install caskroom/cask/brew-cask
 #fi
 
-  brew tap caskroom/versions
+  #brew tap caskroom/versions
 
 # Apps to be installed by homebrew cask.
 apps=(
@@ -15,7 +15,7 @@ apps=(
   duet
   evernote
   istat-menus
-  Caskroom/versions/iterm2-beta
+  iterm2
   libreoffice
   minikube
   minishift

@@ -10,5 +10,12 @@
         "**/*.css",
         "**/*.scss",
         "**/*.go"
-      ]
+    ],
+    "window.zoomLevel": 0,
+    "update.channel": "none",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "gitProjectManager.baseProjectsFolders": ["/Users/mansmatulewics/Documents/projecten/"],
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
 }

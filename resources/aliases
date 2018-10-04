@@ -2,7 +2,7 @@
 #alias asshkill='ps -ef|grep "ssh -o C"|grep mansm.io|grep -v grep|awk {" print $2 "}|xargs kill'
 
 #brew
-alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
+alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && cd -'
 
 #sublime
 alias s='/usr/local/bin/subl'
@@ -19,6 +19,10 @@ alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll 
 
 #demo
 alias demoloop='while :; do curl --silent http://dockerserver1.mansm.io/; sleep 0.5; done'
+
+#minishift launch
+alias minilaunch='minishift config view && minishift start && oc login -u system:admin && oc adm policy add-cluster-role-to-user cluster-admin admin'
+
 
 #vagrant ssh
 alias vssh='ssh -i ~/.vagrant.d/insecure_private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l vagrant'
