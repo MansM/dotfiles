@@ -26,3 +26,5 @@ alias minilaunch='minishift config view && minishift start && oc login -u system
 
 #vagrant ssh
 alias vssh='ssh -i ~/.vagrant.d/insecure_private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l vagrant'
+
+alias vpn_key='security list-keychains | grep Gemalto | xargs security unlock-keychain'
