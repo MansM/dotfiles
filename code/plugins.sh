@@ -1,6 +1,7 @@
 plugins=(
   PeterJausovec.vscode-docker
   lukehoban.Go
+  MS-vsliveshare.vsliveshare
   shd101wyy.markdown-preview-enhanced
   wayou.vscode-todo-highlight
 )
