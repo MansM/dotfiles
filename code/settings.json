@@ -17,5 +17,7 @@
     "editor.renderControlCharacters": false,
     "gitProjectManager.baseProjectsFolders": ["/Users/mansmatulewics/Documents/projecten/"],
     "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+    "vscode-home-assistant.hostUrl": "",
+    "vscode-home-assistant.longLivedAccessToken": ""
 }
