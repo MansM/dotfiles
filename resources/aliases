@@ -12,7 +12,7 @@ alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -
 alias vanp='ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
 
 #cd into projecten
-alias cdp='cd ~/Documents/projecten'
+alias cdp='cd ~/Developer/'
 
 #jekyll
 alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 4000:4000 jekyll/jekyll jekyll s --force_polling --drafts'
