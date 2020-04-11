@@ -11,15 +11,14 @@ brew upgrade
 apps=(
   ansible
   cntlm
-  #docker
-  #docker-compose
-  #docker-machine
-  #docker-swarm
+  docker-machine-driver-xhyve
   git
   golang
   jq
+  kubernetes-cli
   nomad
   openconnect
+  openshift-cli
   packer
   plantuml
   terraform
@@ -29,12 +28,3 @@ apps=(
   watch 
 )
 brew install "${apps[@]}"
-
-# develapps=(
-#   ansible
-# )
-
-# brew install --devel "${develapps[@]}"
-
-# # Git comes with diff-highlight, but isn't in the PATH
-# ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" /usr/local/bin/diff-highlight

@@ -3,34 +3,39 @@
 #  brew install caskroom/cask/brew-cask
 #fi
 
-  brew tap caskroom/versions
+  #brew tap caskroom/versions
 
 # Apps to be installed by homebrew cask.
 apps=(
   1password
+  battery-guardian
   caffeine
   calibre
   dropbox
   duet
   evernote
   istat-menus
-  Caskroom/versions/iterm2-beta
+  iterm2
+  libreoffice
+  minikube
+  minishift
   mplayer-osx-extended
-  #multibit
-  #nomad
+  nomad
+  postman
+  signal
   skype
   slack
   sourcetree
   sublime-text
   telegram
   #terraform
-  tomahawk
   tunnelblick
   vagrant
   virtualbox
   visual-studio-code
   vlc
   whatpulse
+  whatsapp
   wireshark
   yed
 )

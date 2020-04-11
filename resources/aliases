@@ -2,7 +2,7 @@
 #alias asshkill='ps -ef|grep "ssh -o C"|grep mansm.io|grep -v grep|awk {" print $2 "}|xargs kill'
 
 #brew
-alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && brew cask cleanup && cd -'
+alias bubu='brew update && brew upgrade && cd ~/dotfiles && make install && brew cleanup -s && cd -'
 
 #sublime
 alias s='/usr/local/bin/subl'
@@ -12,14 +12,18 @@ alias vans='ansible --private-key=~/.vagrant.d/insecure_private_key -u vagrant -
 alias vanp='ansible-playbook --private-key=~/.vagrant.d/insecure_private_key -u vagrant -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory'
 
 #cd into projecten
-alias cda='cd ~/ahold/'
 alias cdp='cd ~/Documents/projecten'
+
 
 #jekyll
 alias jekyll-drafts='docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll   -it -p 4000:4000 jekyll/jekyll jekyll s --force_polling --drafts'
 
 #demo
 alias demoloop='while :; do curl --silent http://dockerserver1.mansm.io/; sleep 0.5; done'
+
+#minishift launch
+alias minilaunch='minishift config view && minishift start && oc login -u system:admin && oc adm policy add-cluster-role-to-user cluster-admin admin'
+
 
 #vagrant ssh
 alias vssh='ssh -i ~/.vagrant.d/insecure_private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -l vagrant'
@@ -29,3 +33,5 @@ alias screenkill="for i in $(screen -ls |sed -e '1d' | awk {'print $1 '}); do sc
 alias youtube-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
 
 alias k=kubectl
+
+alias vpn_key='security list-keychains | grep Gemalto | xargs security unlock-keychain'

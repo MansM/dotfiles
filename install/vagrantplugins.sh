@@ -7,8 +7,9 @@ fi
 plugins=(
   vagrant-cachier
 	vagrant-hostmanager
-	vagrant-managed-servers
+	#vagrant-managed-servers
 	vagrant-triggers
+  landrush
 )
 
 vagrant plugin install "${plugins[@]}"
