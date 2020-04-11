@@ -19,11 +19,11 @@
 
     - name: get available versions
       changed_when: False
-      shell: brew cask info {{ item }} |head -1| awk '{print $NF}'
+      shell: echo $(brew cask info {{ item }} 2>/dev/null |head -1| awk '{print $NF}')
       register: inst_versions
       with_items: "{{ cask_packages }}"
 
-    - debug:
+    - debug: 
         msg: "{{ item.0.item }}: {{ item.0.stdout }} and {{ item.1.stdout }}"
       with_together:
         - "{{ versions.results }}"

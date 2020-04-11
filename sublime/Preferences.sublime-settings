@@ -1,8 +1,13 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
-	"font_size": 13,
+	"font_size": 11,
 	"ignored_packages":
 	[
+		"Compare Side-By-Side",
+		"Dockerfile Syntax Highlighting",
+		"Puppet",
+		"SublimeLinter",
+		"Terraform",
 		"Vintage"
 	],
 	"tab_size": 2,

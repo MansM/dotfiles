@@ -1,6 +1,8 @@
 [user]
 	name = Mans Matulewicz
 	email = mans.matulewicz@gmail.com
+[includeIf "gitdir:~/Documents/projecten/ING/"]
+	path = .gitconfig-work
 [core]
 	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]

@@ -6,7 +6,6 @@ cask_packages:
   - duet
   - evernote
   - istat-menus
-  - iterm2-beta
   - mplayer-osx-extended
   - skype
   - slack
